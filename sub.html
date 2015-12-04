@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <caption>회원정보입력</caption>
+        <span>* 표시는 필수 입력사항입니다.</span>
+
+            <tbody>
+                    <tr>
+                        <td>* 사용자 이름 </td>
+                        <td><input type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td>* 아이디 </td>
+                        <td><input type="text"><input type="button" value="중복확인">
+                            <br>- 영문, 숫자 조합으로 6~20자까지 사용가능합니다.
+                            <br>- 첫 글자는 영문으로 설정해 주십시오.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>* 비밀번호 </td>
+                        <td><input type="password">
+                            <br>- 영문, 숫자, 특수 문자 조합으로 8~20자까지 사용가능합니다. (영문은 대, 소문자 구분)
+                            <br>- 유출되기 쉬운 비밀번호는 등록할 수 없습니다. (예, 111,  abcd, password 등)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>* 비밀번호 확인 </td>
+                        <td><input type="password"></td>
+                    </tr>
+
+                    <tr>
+                        <td>* 이메일 </td>
+                        <td><input type="text"> @ <input type="text">
+                            <select>
+                                <option>직접입력</option>
+                                <option>naver.com</option>
+                                <option>nate.com</option>
+                                <option>hanmail.net</option>
+                                <option>gmail.com</option>
+                                <option>hotmail.com</option>
+                                <option>chol.com</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>연락처</td>
+                        <td>
+                            <input type="text"> - <input type="text"> - <input type="text">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>* 휴대전화</td>
+                        <td>
+                            <select>
+                                <option>010</option>
+                                <option>011</option>
+                                <option>016</option>
+                                <option>017</option>
+                                <option>019</option>
+                            </select>
+                            <span> - </span>
+                            <input type="text"> - <input type="text">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>* 주소 </td>
+                        <td>
+                            <input type="text"> - <input type="text"><input type="button" value="주소 찾기">
+                            <br><input type="text">
+                            <br><input type="text">
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="회원가입">
+    </body>
+</html>

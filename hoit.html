@@ -15,6 +15,12 @@
     구성요소로는 빈태그 형식의 col을 사용. col의 속성으로는 style="" width="" 등을 사용하여 디자인을 조절할 수 있음.
     -->
 
+    <!--
+        colspan : 좌우 열을 병합할 때 사용. 값을 줄 경우 해당 수 만큼의 열이 병합됨.
+        rowspan : 상하 행을 병합할 때 사용. 값을 줄 경우 해당 수 만큼의 행이 병합됨.
+
+    -->
+
 
     <table border="1" width="100%" summary="자세한 설명">
         <caption>게시판</caption>
@@ -25,40 +31,53 @@
             <col />
             <col />
         </colgroup>
-
+<!--
+width를 정해주면 딱 그 크기만큼 늘어남. <col /> 이거는 자동으로 맞춰지는 거
+-->
         <thead>
             <tr>
-                <td>itemitemitem</td>
-                <td>item</td>
-                <td>item</td>
-                <td>item</td>
+                <th scope="colgroup" colspan="2">번호</th>
+                <th scope="colgroup" colspan="2">작성자</th>
+            </tr>
+
+            <tr>
+                <th scope="col">번호</th>
+                <th scope="col">제목</th>
+                <th scope="col">작성자</th>
+                <th scope="col">작성일</th>
             </tr>
         </thead>
 
-        <tbody>
-            <tr>
-                <td>item</td>
-                <td>item</td>
-                <td>item</td>
-                <td>item</td>
-            </tr>
-            <tr>
-                <td>item</td>
-                <td>item</td>
-                <td>item</td>
-                <td>item</td>
-            </tr>
-        </tbody>
-
         <tfoot>
             <tr>
+                <th scope="row">foot</th>
                 <td>foot</td>
                 <td>foot</td>
                 <td>foot</td>
-                <td>foot</td>
-            </tr>
+                <tbody>
+                    <tr>
+                        <th scope="row">item</th>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">item</th>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">item</th>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+        </html>
 
-        </tfoot>
 <!--
 tr : table row
 테이블 사용 시 table 태그를 사용하여 element를 구성해야한다. 구성요소중 tr은 행을 이야기하고 tr은 열을 이야기 한다.
@@ -68,10 +87,3 @@ tbody : 테이블의 컨텐츠
 tfoot : 테이블의 합산정보 / 필수사항 아님 / tfoot의 위치는 thead와 tbody 사이가 된다.
 
 -->
-
-
-
-
-    </table>
-</body>
-</html>
