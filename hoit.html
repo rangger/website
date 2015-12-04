@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    caption : 표제(필수항목 : css에서 눈에 안보이더라도 써야 한다.) h와는 다르다.
+
+    summary : 현재 표의 자세한 설명 마치 alt처럼 디테일한 부분 설명, 필수항목이 아님.
+
+    *
+    colgroup은 테이블 아이템 즉 열의 넓이에 대한 디자인 값을 넣을 때 사용된다.
+    구성요소로는 빈태그 형식의 col을 사용. col의 속성으로는 style="" width="" 등을 사용하여 디자인을 조절할 수 있음.
+    -->
+
+
+    <table border="1" width="100%" summary="자세한 설명">
+        <caption>게시판</caption>
+
+        <colgroup>
+            <col width="100"/>
+            <col width="300"/>
+            <col />
+            <col />
+        </colgroup>
+
+        <thead>
+            <tr>
+                <td>itemitemitem</td>
+                <td>item</td>
+                <td>item</td>
+                <td>item</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>item</td>
+                <td>item</td>
+                <td>item</td>
+                <td>item</td>
+            </tr>
+            <tr>
+                <td>item</td>
+                <td>item</td>
+                <td>item</td>
+                <td>item</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>foot</td>
+                <td>foot</td>
+                <td>foot</td>
+                <td>foot</td>
+            </tr>
+
+        </tfoot>
+<!--
+tr : table row
+테이블 사용 시 table 태그를 사용하여 element를 구성해야한다. 구성요소중 tr은 행을 이야기하고 tr은 열을 이야기 한다.
+
+thead : 테이블의 머릿글 / 필수사항 아님
+tbody : 테이블의 컨텐츠
+tfoot : 테이블의 합산정보 / 필수사항 아님 / tfoot의 위치는 thead와 tbody 사이가 된다.
+
+-->
+
+
+
+
+    </table>
+</body>
+</html>
